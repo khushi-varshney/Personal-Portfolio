@@ -1,0 +1,343 @@
+*{
+    margin: 2px;
+    padding: 5px;
+    background-color: beige;
+
+}
+.container2{
+    margin-top: 3vw;
+    display:flex;
+    background-color: beige;
+
+}
+.sidebar1{
+    text-align: center;
+    font-size: 1.7vw;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border:2px solid red;
+    outline: 4px solid green;
+    width:13vw;
+    /* height:86vh; */
+    transition: transform 0.1s ease-in;
+}
+.sidebar1 ul{
+    list-style: none;
+    font-weight: 700;
+}
+.sidebar1 ul li{
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.sidebar1 ul li a{
+    text-decoration: none;
+    color:darkmagenta;
+}
+.sidebar1 ul li a:hover,
+.sidebar1 ul li a.active{
+    color: rgb(85, 116, 85);
+    /* border-bottom: 3px solid rgb(182, 40, 52);
+    text-shadow: 2px 2px 2px lawngreen; */
+}
+.sidebarGo{
+    transform: translate(-450px,0px);
+    position: absolute;
+}
+.hamburger{
+    margin: 0;
+    margin-left: 1vw;
+    margin-top: 0.5vw;
+    padding: 0;
+    position: absolute;
+    left:20px;
+    /* background-color: ; */
+}
+.hamburger button, span{
+    border:none;
+    padding: 0;
+    cursor:pointer;
+}
+.close{
+    margin-left:10vw;
+    /* background-color: beige; */
+    border:none;
+}
+.ham{
+    background: none;
+    border:none;
+    margin-left:0;
+    color: cadetblue;
+}
+.main1{
+    /* padding-left:1vw;
+    padding-right: 1vw; */
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 2px solid yellow;
+    outline: 4px solid purple;
+}
+.main2{
+    width:84vw;
+}
+.heading1{
+    text-align: center;
+    text-decoration: underline;
+    margin: 7px;
+    padding: 20px;
+}
+.bars{
+    font-size:1vw;
+    margin:10px;
+}
+.technical-bars .bars:first-child{
+    margin-top: 0;
+}
+.technical-bars .bars:last-child{
+    margin-bottom: 0;
+}
+.technical-bars .bars .languages{
+    font-size:1.4vw;
+    /* background-color: bisque; */
+    font-weight: 500;
+    color:black;
+    animation : showText 0.5s 1s linear forwards;
+    opacity:0;
+}
+.technical-bars .bars .progress-line{
+    position:relative;
+    border-radius: 10px;
+    width:100%;
+    height:5px;
+    padding:0px;
+    background-color: black;
+    animation: animate 1s linear forwards;
+    transform:scaleX(0);
+    transform-origin: left;
+}
+@keyframes animate {
+    100%{
+        transform: scaleX(1);
+    }
+}
+.html span{
+    height:100%;
+    width:90%;
+    background-color: aqua;
+    position: absolute;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+    animation:animate 1s 1s cubic-bezier(1,0,0,1,1) forwards;
+    /* transform: scaleX(0); */
+    transform-origin: left;
+}
+.css span{
+    height:100%;
+    width:90%;
+    background-color: aqua;
+    position: absolute;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+    animation:animate 1s 1s cubic-bezier(1,0,0,5,1) forwards infinite;
+    /* transform: scaleX(0); */
+    transform-origin: left;
+}
+.javascript span{
+    height:100%;
+    width:70%;
+    background-color: aqua;
+    position: absolute;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+    animation:animate 1s 1s cubic-bezier(1,0,0,5,1) forwards  ;
+    /* transform: scaleX(0); */
+    transform-origin: left;
+}
+.express span{
+    height:100%;
+    width:60%;
+    background-color: aqua;
+    position: absolute;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+    animation:animate 1s 1s cubic-bezier(1,0,0,5,1) forwards;
+    /* transform: scaleX(0); */
+    transform-origin: left;
+}
+.java span{
+    height:100%;
+    width:85%;
+    background-color: aqua;
+    position: absolute;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+    animation:animate 1s 1s cubic-bezier(1,0,0,5,1) forwards;
+    /* transform: scaleX(0); */
+    transform-origin: left;
+}
+/* .progress-line span::after{
+    position: absolute;
+    padding:1px 8px;
+    background-color: black;
+    color:white;
+    font-size:12px;
+    border-radius:3px;
+    top: -38px;
+    right:-30px;
+    animation:showText 0.5s 1.5s linear forwards;
+    opacity:0;
+}
+.progress-line.html span::after{
+    content:90%;
+}
+.progress-line.css span::after{
+    content:80%;
+}
+.progress-line.javascript span::after{
+    content:70%;
+}
+.progress-line.java span::after{
+    content:85%;
+}
+.progress-line.express span::after{
+    content:60%;
+}
+.progress-line span::before{
+    content:"";
+    position:absolute;
+    width:0;
+    height:0;
+    border:7px solid transparent;
+    border-bottom-width:0px;
+    border-right-width: 0px;
+    border-top-color: black;
+    top:-10px;
+    right:0px;
+    animation : showText 0.5s 1.5s linear forwards;
+    opacity:0;
+} */
+@keyframes showText {
+    100%{
+        opacity:1;
+    }
+}
+.radial-bar{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+}
+.radial-bars{
+    width:46%;
+    height:200px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.radial-bars svg{
+    position: absolute;
+    top:50%;
+    left:56%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width:120px;
+    height:190px;
+}
+.progress-bar{
+    stroke-width: 8;
+    stop-color: black;
+    fill: transparent;
+    stroke-dashoffset: 502;
+    stroke-dasharray: 502;
+    stroke-linecap: round;
+    animation:animate-bar 1s linear forwards;
+}
+
+@keyframes animate-bar {
+    100%{
+        stroke-dashoffset: -1;
+    }
+}
+.path{
+    stroke-width: 8;
+    stroke:lightcoral;
+    fill:blanchedalmond;
+    stroke-dashoffset: 502;
+    stroke-dasharray: 502;
+    stroke-linecap: round;
+}
+.path-1{
+    animation:animate-path1 1s 1s linear forwards;
+}
+.path-2{
+    animation:animate-path2 1s 1s linear forwards;
+}
+.path-3{
+    animation:animate-path3 1s 1s linear forwards;
+}
+.path-4{
+    animation:animate-path4 1s 1s linear forwards;
+}
+@keyframes animate-path1 {
+    100%{
+        stroke-dashoffset: 50;
+    }
+}
+@keyframes animate-path2 {
+    100%{
+        stroke-dashoffset: 155;
+    }
+}
+@keyframes animate-path3 {
+    100%{
+        stroke-dashoffset: 125;
+    }
+}
+@keyframes animate-path4 {
+    100%{
+        stroke-dashoffset: 75;
+    }
+}
+.percentage{
+    position: absolute;
+    background-color: blanchedalmond;
+    top:50%;
+    left:55%;
+    transform: translate(-50%,-50%);
+    animation:showText 0.5s 1s linear forwards;
+    opacity:0;
+    font-weight:800;
+    font-size:20px;
+}
+.text{
+    font-size: 1.4vw;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1px;
+    padding-bottom: 1px;
+
+}
+@media screen and (max-width:600px) {
+    .text{
+        font-size:3vw;
+    }
+    .bars{
+        font-size:3vw;
+    }
+    .sidebar1{
+        font-size: 4vw;
+        width:30vw;
+    }
+    .technical-bars .bars .languages{
+        font-size:3.5vw;
+    }
+    .close{
+        margin-left: 20vw;
+    }
+}
